@@ -144,6 +144,8 @@ public class IncanRoomCamera {
 	#endregion
 }
 
+// Old effect stacking functionality we may reimplement some day
+
 /*
 private void SetUpFullscreen2(string container, RoomCamera camera) {
 	if (fullscreen2 == null)
