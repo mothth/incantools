@@ -18,7 +18,7 @@ A tutorial for implementing your own properties may be available in the future.
 
 ### Devtools Changes
 IncanTools adds three new keybinds to devtools:
-- **T** - reload room palette and fullscreen effects
+- **T** - reload room palettes and fullscreen effects
 - **Y** - reload placed objects*
 - **/** - increase karma/ripple
 

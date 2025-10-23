@@ -41,6 +41,7 @@ namespace IncanTools
 				if (camera.paletteB != -1) {
 					camera.LoadPalette(camera.paletteB, ref camera.fadeTexB);
 				}
+				camera.terrainPalette?.Reload();
 				camera.ApplyFade();
 			}
 			
@@ -59,7 +60,7 @@ namespace IncanTools
 					DeathPersistentSaveData saveData = (game.session as StoryGameSession).saveState.deathPersistentSaveData;
 
 					// Karma
-					if (saveData.maximumRippleLevel == 0.0)
+					if (!ModManager.Watcher || saveData.maximumRippleLevel == 0.0)
 					{
 						if (saveData.karma == saveData.karmaCap)
 						{
@@ -109,6 +110,7 @@ namespace IncanTools
 			}
 		}
 
+		// No threat drone vol slider
 		private static void SoundPageUpdate(On.DevInterface.SoundPage.orig_Update orig, SoundPage self)
 		{
 			orig(self);

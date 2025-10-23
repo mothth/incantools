@@ -1,7 +1,7 @@
 {
   "name": "IncanTools",
   "id": "incantools",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "target_game_version": "v1.11.2",
   "hide_version": false,
   "authors": "of-incandescence",

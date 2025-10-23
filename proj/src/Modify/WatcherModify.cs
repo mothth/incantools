@@ -13,9 +13,12 @@ internal static class WatcherModify
 {
 	public static void InitHooks()
 	{
-		On.Region.HasSentientRotResistance += RegionHasSentientRotResistance;
-		//IL.Player.SpawnDynamicWarpPoint += PlayerSpawnDynamicWarpPoint;
-		//On.Watcher.WarpPoint.CreateOverrideData += WarpPointCreateOverrideData;
+		if (ModManager.Watcher)
+		{
+			On.Region.HasSentientRotResistance += RegionHasSentientRotResistance;
+			//IL.Player.SpawnDynamicWarpPoint += PlayerSpawnDynamicWarpPoint;
+			//On.Watcher.WarpPoint.CreateOverrideData += WarpPointCreateOverrideData;
+		}
 	}
 
 	private static bool RegionHasSentientRotResistance(On.Region.orig_HasSentientRotResistance orig, string name)
