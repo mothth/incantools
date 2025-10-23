@@ -1,0 +1,20 @@
+{
+  "name": "IncanTools",
+  "id": "incantools",
+  "version": "0.1.1",
+  "target_game_version": "v1.11.2",
+  "hide_version": false,
+  "authors": "of-incandescence",
+  "description": "A dependency mod for Of Incandescence's regions. See workshop page for usage.",
+  "requirements": [
+    "pom"
+  ],
+  "requirements_names": [
+    "POM"
+  ],
+  "checksum_override_version": false,
+  "tags": [
+    "Tools",
+    "Dependency"
+  ]
+}
